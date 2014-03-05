@@ -143,6 +143,13 @@
         launcher:x="2"
         launcher:y="0" />
     <favorite
+        launcher:packageName="com.android.contacts"
+        launcher:className="com.android.contacts.activities.PeopleActivity"
+        launcher:container="-101"
+        launcher:screen="3"
+        launcher:x="3"
+        launcher:y="0" />
+    <favorite
         launcher:packageName="com.google.android.gm"
         launcher:className="com.google.android.gm.ConversationListActivityGmail"
         launcher:container="-101"
@@ -153,8 +160,8 @@
         launcher:packageName="com.android.mms"
         launcher:className="com.android.mms.ui.ConversationList"
         launcher:container="-101"
-        launcher:screen="3"
-        launcher:x="3"
+        launcher:screen="4"
+        launcher:x="4"
         launcher:y="0" />
     <favorite
         launcher:packageName="com.android.chrome"
