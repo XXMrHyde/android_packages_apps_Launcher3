@@ -990,6 +990,14 @@ public class Launcher extends Activity
        }
     }
 
+    protected void startSystemSettings() {
+       Intent i = new Intent(android.provider.Settings.ACTION_SETTINGS);
+       startActivity(i);
+       if (mWorkspace.isInOverviewMode()) {
+           mWorkspace.exitOverviewMode(false);
+       }
+    }
+
     public interface QSBScroller {
         public void setScrollY(int scrollY);
     }
@@ -1190,6 +1198,14 @@ public class Launcher extends Activity
             }
         });
         settingsButton.setOnTouchListener(getHapticFeedbackTouchListener());
+
+        View systemSettingsButton = findViewById(R.id.system_settings_button);
+        systemSettingsButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                startSystemSettings();
+            }
+        });
         mOverviewPanel.setAlpha(0f);
 
         // Setup the workspace

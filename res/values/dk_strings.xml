@@ -17,6 +17,9 @@
     <!-- Folder titles -->
     <string name="google_title" translatable="false">Google</string>
 
+    <!-- Overview panel -->
+    <string name="system_settings_button_text">System settings</string>
+
     <!-- Preferences -->
     <string name="pref_workspace_title">Workspace settings</string>
     <string name="pref_title_workspace_rows">Rows</string>
