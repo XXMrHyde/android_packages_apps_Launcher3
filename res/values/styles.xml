@@ -100,8 +100,17 @@
     </style>
 
     <!-- Launcher Settings -->
-    <style name="LauncherTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+    <style name="LauncherTheme" parent="@android:style/Theme.Material">
         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:alertDialogTheme">@style/Theme.AlertDialog</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Theme.AlertDialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:colorBackground">@color/background</item>
         <item name="android:colorPrimary">@color/primary</item>
         <item name="android:colorPrimaryDark">@color/primary_dark</item>
         <item name="android:colorAccent">@color/accent</item>
