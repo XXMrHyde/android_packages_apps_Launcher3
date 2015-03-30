@@ -453,11 +453,11 @@ public class DeviceProfile {
             numRows = prefNumRows;
         }
 
-        boolean showSearchBar = prefs.getBoolean(LauncherPreferences.KEY_SHOW_SEARCHBAR, true);
+//        boolean showSearchBar = prefs.getBoolean(LauncherPreferences.KEY_SHOW_SEARCHBAR, true);
+        boolean showSearchBar = true;
         if(showSearchBar) {
             searchBarSpaceHeightPx = searchBarHeightPx + 2 * edgeMarginPx;
-        }
-        else {
+        } else {
             searchBarSpaceHeightPx = 2 * edgeMarginPx;
         }
     }

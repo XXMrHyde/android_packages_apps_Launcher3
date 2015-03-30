@@ -11,7 +11,7 @@ public final class LauncherPreferences {
 
         public static final String KEY_WORKSPACE_DEFAULT_PAGE = "pref_key_workspaceDefaultPage";
 
-        public static final String KEY_SHOW_SEARCHBAR = "pref_key_showSearchBar";
+//        public static final String KEY_SHOW_SEARCHBAR = "pref_key_showSearchBar";
 
         private static final String TAG = "LauncherPreferences";
 
@@ -55,7 +55,7 @@ public final class LauncherPreferences {
         public static boolean isLauncherPreference(String key) {
                 return key.equals(KEY_WORKSPACE_ROWS)
                                 || key.equals(KEY_WORKSPACE_COLS)
-                                || key.equals(KEY_WORKSPACE_DEFAULT_PAGE)
-                                || key.equals(KEY_SHOW_SEARCHBAR);
+                                || key.equals(KEY_WORKSPACE_DEFAULT_PAGE);
+//                                || key.equals(KEY_SHOW_SEARCHBAR);
         }
 }
